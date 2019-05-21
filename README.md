@@ -1,4 +1,4 @@
-# ML-Face-Verification
+# ML-Face-Recognition
 ***By Data Science Machine Learning Group***
 
 
