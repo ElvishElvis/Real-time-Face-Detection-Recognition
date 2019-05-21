@@ -32,6 +32,20 @@ def resize(image, width=1200):
     resized = cv2.resize(image, dim, interpolation=cv2.INTER_AREA)
     return resized
 
+def to_rgb_from2(img):
+    w, h = img.shape
+    ret = np.empty((w, h, 3), dtype=np.uint8)
+    ret[:, :, 0] = ret[:, :, 1] = ret[:, :, 2] = img
+    return ret
+
+def to_rgb_from4():
+    pass
+
+
+
+
+
+#     img = facenet.to_rgb(img)
 def run():
     print("Reach Position 1")
     detector = dlib.get_frontal_face_detector()
@@ -79,9 +93,13 @@ def run():
                         temp = temp[y - h:y + int(h / 2), x - w:x + int(w / 2)]
                         temp = misc.imresize(temp, (160, 160), interp='bilinear')
                         # When don't wan to snap the picture, comment out the following three lines
-                        cv2.imwrite("name{}.png".format(number), temp)
+                        # cv2.imwrite("name{}.png".format(number), temp)
                         number += 1
                         print("SNAP!!!!!!!!!!!!! GIVE A SMILE")
+                        if temp.ndim == 2:
+                            temp=to_rgb_from2(temp);
+                        # elif temp.ndim==4:
+                        #     temp = to_rgb_from4(temp);
                         x1, y1, a1 = temp.shape
                         temp = temp.reshape([1, x1, y1, a1])
                         # we put the cropped image to the FaceNet, input shape(1,160,160,3)
@@ -105,3 +123,4 @@ def run():
 
     video.release()
     cv2.destroyAllWindows()
+# run()

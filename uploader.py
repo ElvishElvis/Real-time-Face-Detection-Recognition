@@ -31,14 +31,14 @@ for each line in txt:
 '''
 
 
-
 def uploader(txtfile):
     '''
     the uploader for uploading our labeled pictures
     :param txtfile: txt file with rows of name and the path for our picture， each row is a different pic
     '''
 
-    infotable = pd.DataFrame(columns = ['name', 'features', 'img'])
+    infotable = pd.DataFrame(columns=['name', 'features', 'img'])
+
     def upload_helper(string, csv_name):
         '''
         the helper method for our uploader
@@ -52,26 +52,23 @@ def uploader(txtfile):
         picpath = name_picpath[1]
 
         img = cv2.imread(picpath)  # this is the picture in array form;
+        print(img.shape)
 
         img = misc.imresize(img, (160, 160), interp='bicubic')
 
-        features = calculate_feature(picpath) # this function require us to input a path as parameter;
-        
-        new_table = pd.DataFrame(data = {'name': [name], 'features': [features], 'img': [img]})
+        features = calculate_feature(picpath)  # this function require us to input a path as parameter;
 
-        return pd.concat([infotable, new_table],ignore_index=True)
+        new_table = pd.DataFrame(data={'name': [name], 'features': [features], 'img': [img]})
 
+        return pd.concat([infotable, new_table], ignore_index=True)
 
-
-    with open(txtfile, encoding = "utf16") as f:
+    with open(txtfile, encoding="utf16") as f:
         for line in f:
             infotable = upload_helper(line, 'labeled_pics.csv')
 
     np.set_printoptions(threshold=sys.maxsize)
 
-    infotable.to_csv('labeled_pics.csv', index = False)
-
-
+    infotable.to_csv('labeled_pics.csv', index=False)
 
 
 def clear(csv_name):
@@ -85,27 +82,14 @@ def clear(csv_name):
 
 
 def calculation(input):
-    #remember to call uploader before calculation, so that we have dataset in 'labeled_pics.csv file'!!!!!!!!!
+    # remember to call uploader before calculation, so that we have dataset in 'labeled_pics.csv file'!!!!!!!!!
     data = pd.read_csv('labeled_pics.csv', index_col=0)
 
     data['features'] = data['features'].apply(lambda x: re.sub('[\s\s]+', ' ', x.replace("\n ", '')).replace(' ', ','))
 
-    results=data['features'].apply(lambda x: np.sqrt(np.sum(np.square(np.subtract(eval(x), input)))))
+    results = data['features'].apply(lambda x: np.sqrt(np.sum(np.square(np.subtract(eval(x), input)))))
     return results.idxmin()
 
-
-
-
-#uploader("tester.txt")
-#print(calculation(np.random.random_sample((1,512))))
-#clear("labeled_pics.csv")
-
-
-
-
-
-
-
-
-
-
+uploader("tester.txt")
+# print(calculation(np.random.random_sample((1,512))))
+# clear("labeled_pics.csv")
