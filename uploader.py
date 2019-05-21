@@ -36,36 +36,39 @@ def uploader(txtfile):
     the uploader for uploading our labeled pictures
     :param txtfile: txt file with rows of name and the path for our picture， each row is a different pic
     '''
-
+    name_list=[]
+    path_list=[]
+    fic_list=[]
     infotable = pd.DataFrame(columns=['name', 'features', 'img'])
-
-    def upload_helper(string, csv_name):
-        '''
-        the helper method for our uploader
-        :param string: the string containing the name and path of our single picture
-        :param csv_name: the csv file to put our dataset
-
-        '''
-        name_picpath = string.split()
-        name = name_picpath[0]
-
-        picpath = name_picpath[1]
-
-        img = cv2.imread(picpath)  # this is the picture in array form;
-        print(img.shape)
-
-        img = misc.imresize(img, (160, 160), interp='bicubic')
-
-        features = calculate_feature(picpath)  # this function require us to input a path as parameter;
-
-        new_table = pd.DataFrame(data={'name': [name], 'features': [features], 'img': [img]})
-
-        return pd.concat([infotable, new_table], ignore_index=True)
-
     with open(txtfile, encoding="utf16") as f:
         for line in f:
-            infotable = upload_helper(line, 'labeled_pics.csv')
+            if len(line)==0:
+                continue
+            name_picpath = line.split()
+            name = name_picpath[0]
+            name_list.append(name)
+            print("append "+name, end="")
+            path = name_picpath[1]
+            path_list.append(path)
+            print(path)
+            print(" ")
+        print("Uploading queue: \n")
+        print(path_list)
+        pics,fics,errors= calculate_feature(path_list)  # this function require us to input a path as parameter;
+        errors=set(errors)
+        print("Error index are {}".format(errors))
 
+        for i in range(len(pics)):
+            if i in errors:
+                continue
+            new_table = pd.DataFrame(data={'name': [name_list[i]], 'features': [fics[i]], 'img': [pics[i,0]]})
+            infotable=pd.concat([infotable, new_table], ignore_index=True)
+        print("\nSuccessful uploaded {} pics : ".format(len(pics)))
+        print("Label names are : ")
+        print(name_list)
+        print("\nFail to upload {} pics : ".format(len(errors)))
+        print("Label names are : ")
+        print([ name_list[i] for i in range(len(name_list)) if i in errors])
     np.set_printoptions(threshold=sys.maxsize)
 
     infotable.to_csv('labeled_pics.csv', index=False)
@@ -90,6 +93,7 @@ def calculation(input):
     results = data['features'].apply(lambda x: np.sqrt(np.sum(np.square(np.subtract(eval(x), input)))))
     return results.idxmin()
 
+clear("labeled_pics.csv")
 uploader("tester.txt")
 # print(calculation(np.random.random_sample((1,512))))
-# clear("labeled_pics.csv")
+

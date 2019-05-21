@@ -90,7 +90,7 @@ def run():
                         cv2.circle(frame, (x, y), 2, (0, 0, 255), -1)
                     # to prevent empty frame
                     try:
-                        temp = temp[y - h:y + int(h / 2), x - w:x + int(w / 2)]
+                        temp = temp[y:y + h , x :x + w ]
                         temp = misc.imresize(temp, (160, 160), interp='bilinear')
                         # When don't wan to snap the picture, comment out the following three lines
                         # cv2.imwrite("name{}.png".format(number), temp)
