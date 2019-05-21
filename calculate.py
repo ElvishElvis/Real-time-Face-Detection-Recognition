@@ -68,5 +68,7 @@ model = "20180402-114759"
 imgs=["Molly003.jpeg","Molly002.jpeg","Molly001.jpeg","Molly004.jpeg"]
 
 a,b=calculate_feature(imgs)
-print(a.shape)
-print(b.shape)
+print(a.shape) # (4, 160, 160, 3)
+print(b.shape) # (4, 512)
+
+#(4, 160, 160, 3)-> a[0][0]=a[1][0]=a[2][0]=a[3][0](160,160,3)
