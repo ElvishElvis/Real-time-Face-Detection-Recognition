@@ -8,44 +8,15 @@ from calculate import calculate_feature
 
 from scipy import misc
 
-'''uploader
-1. upload_helper(string)
-
-if exist (csv): 已经存在一个csv dataset
-    put our labeled pics into it.
-
-    ---------------------------------------------------------------------
-    name | extracted 512 feature array | picture in array form(1,160,160,3)
-    --------------------------------------------------------------------
-
-else: 没有一个存在的csv dataset
-    create new csv dataset and put our labeled pics into it
-
-
-2. uploader (txt)
-for each line in txt:
-    call upload_helper(each line)
-
-3. clear (csv)
-
-'''
 
 
 
 def uploader(txtfile):
-    '''
-    the uploader for uploading our labeled pictures
-    :param txtfile: txt file with rows of name and the path for our picture， each row is a different pic
-    '''
+
 
     infotable = pd.DataFrame(columns = ['name', 'features', 'img'])
-    def upload_helper(string, csv_name):
-        '''
-        the helper method for our uploader
-        :param string: the string containing the name and path of our single picture
-        :param csv_name: the csv file to put our dataset
+    def upload_helper(string):
 
-        '''
         name_picpath = string.split()
         name = name_picpath[0]
 
@@ -55,7 +26,8 @@ def uploader(txtfile):
 
         img = misc.imresize(img, (160, 160), interp='bicubic')
 
-        features = calculate_feature(picpath) # this function require us to input a path as parameter;
+        features = calculate_feature(picpath)[0] # this function require us to input a path as parameter;
+        # print(features[0])
         
         new_table = pd.DataFrame(data = {'name': [name], 'features': [features], 'img': [img]})
 
@@ -63,9 +35,9 @@ def uploader(txtfile):
 
 
 
-    with open(txtfile, encoding = "utf16") as f:
+    with open(txtfile, encoding = "utf8") as f:
         for line in f:
-            infotable = upload_helper(line, 'labeled_pics.csv')
+            infotable = upload_helper(line)
 
     np.set_printoptions(threshold=sys.maxsize)
 
@@ -75,29 +47,28 @@ def uploader(txtfile):
 
 
 def clear(csv_name):
-    '''
-    used for clearing the csv file
-    :param csv_name: the name of the csv file that used for storing dataset
-    '''
 
     f = open(csv_name, "w+")
     f.close()
 
 
 def calculation(input):
+    # print(input)
     #remember to call uploader before calculation, so that we have dataset in 'labeled_pics.csv file'!!!!!!!!!
     data = pd.read_csv('labeled_pics.csv', index_col=0)
 
-    data['features'] = data['features'].apply(lambda x: re.sub('[\s\s]+', ' ', x.replace("\n ", '')).replace(' ', ','))
-
-    results=data['features'].apply(lambda x: np.sqrt(np.sum(np.square(np.subtract(eval(x), input)))))
+    # data['features'] = data['features'].apply(lambda x: re.sub('[\s\s]+', ' ', x.replace("\n ", '')).replace(' ', ','))
+    
+    # results=data['features'].apply(lambda x: np.sqrt(np.sum(np.square(np.subtract(x, input)))))
+    #Since we use the min number to define the best, so for empty we use max, so it will never be chosen
+    results = data['features'].apply(lambda x: np.sqrt(np.sum(np.square(np.subtract(eval(x), input))) if x != '[]' else sys.float_info.max))
     return results.idxmin()
 
 
 
 
-#uploader("tester.txt")
-#print(calculation(np.random.random_sample((1,512))))
+uploader("tester.txt")
+print(calculation(np.random.random_sample((1,512))))
 #clear("labeled_pics.csv")
 
 
