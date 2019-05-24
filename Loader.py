@@ -2,9 +2,11 @@ import os
 import tensorflow as tf
 import re
 from tensorflow.python.platform import gfile
+import warnings
 
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
 
+warnings.filterwarnings("ignore")
 
 # model loader
 def load_model(model):

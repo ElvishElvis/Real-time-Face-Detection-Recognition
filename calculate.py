@@ -1,11 +1,14 @@
 import numpy as np
 import dlib
 import cv2
-import copy
 import Loader
 import tensorflow as tf
-import camera
+import helpers
 from scipy import misc
+import os
+import warnings
+
+os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
 
 # return the list of 512 feature & the list of face matrix
 def calculate_feature(names):
@@ -25,8 +28,9 @@ def calculate_feature(names):
 
                 # sometime read image may have null, thus nullpointer exception
                 try:
+                    name=os.path.join('./pic/', name)
                     img = cv2.imread(name)
-                    img = camera.resize(img, width=1200)
+                    img = helpers.resize(img, width=1200)
                 except AttributeError:
                     print("error, {} have invalid size!!!".format(name))
                     error_list.append(ppp)
@@ -46,17 +50,13 @@ def calculate_feature(names):
                         if(len(rects))>1:
                             raise ValueError
                         shape = predictor(gray, rect)
-                        shape = camera.shape_to_np(shape)
-                        (x, y, w, h) = camera.rect_to_coordinate(rect)
+                        shape = helpers.shape_to_np(shape)
+                        (x, y, w, h) = helpers.rect_to_coordinate(rect)
 
                         img = img[y :y + h , x :x +w ]
                         img = misc.imresize(img, (160, 160), interp='bilinear')
-                        cv2.imwrite("name{}.jpg".format(ppp),img)
+                        # cv2.imwrite("name{}.jpg".format(ppp),img)
 
-                        # x1, y1, a1 = img.shape
-                        # # when 4 dimension
-                        # temp = copy.deepcopy(img)
-                        # temp = temp.reshape([1, x1, y1, a1])
                         img_list.append(img)
 
                         print(name+" Success!!!!!!!!!!!!!!!")

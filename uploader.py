@@ -1,12 +1,8 @@
 import pandas as pd
-import cv2
 import numpy as np
-import re
 import sys
-
 from calculate import calculate_feature
 
-from scipy import misc
 
 '''uploader
 1. upload_helper(string)
@@ -38,7 +34,6 @@ def uploader(txtfile):
     '''
     name_list=[]
     path_list=[]
-    fic_list=[]
     infotable = pd.DataFrame(columns=['name', 'features', 'img'])
     with open(txtfile, encoding="utf16") as f:
         for line in f:
@@ -57,7 +52,7 @@ def uploader(txtfile):
         print(path_list)
         pics,fics,errors= calculate_feature(path_list)  # this function require us to input a path as parameter;
         errors=set(errors)
-        print("Error index are {}".format(errors))
+        print("\nError index are {}".format(errors)+"\n")
         valid_name=[ name_list[i] for i in range(len(name_list)) if i not in errors]
         invalid_name=[ name_list[i] for i in range(len(name_list)) if i in errors]
         for i in range(len(pics)):
