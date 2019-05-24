@@ -45,9 +45,10 @@ def uploader(txtfile):
             if len(line)==0:
                 continue
             name_picpath = line.split()
+            #
             name = name_picpath[0]
             name_list.append(name)
-            print("append "+name, end="")
+            print("append "+name, end=" : ")
             path = name_picpath[1]
             path_list.append(path)
             print(path)
@@ -57,18 +58,18 @@ def uploader(txtfile):
         pics,fics,errors= calculate_feature(path_list)  # this function require us to input a path as parameter;
         errors=set(errors)
         print("Error index are {}".format(errors))
-
+        valid_name=[ name_list[i] for i in range(len(name_list)) if i not in errors]
+        invalid_name=[ name_list[i] for i in range(len(name_list)) if i in errors]
         for i in range(len(pics)):
-            if i in errors:
-                continue
-            new_table = pd.DataFrame(data={'name': [name_list[i]], 'features': [fics[i]], 'img': [pics[i,0]]})
+            print(fics[i])
+            new_table = pd.DataFrame(data={'name': [valid_name[i]], 'features': [fics[i]], 'img': [pics[i]]})
             infotable=pd.concat([infotable, new_table], ignore_index=True)
         print("\nSuccessful uploaded {} pics : ".format(len(pics)))
         print("Label names are : ")
-        print(name_list)
+        print(valid_name)
         print("\nFail to upload {} pics : ".format(len(errors)))
         print("Label names are : ")
-        print([ name_list[i] for i in range(len(name_list)) if i in errors])
+        print(invalid_name)
     np.set_printoptions(threshold=sys.maxsize)
 
     infotable.to_csv('labeled_pics.csv', index=False)
@@ -84,14 +85,7 @@ def clear(csv_name):
     f.close()
 
 
-def calculation(input):
-    # remember to call uploader before calculation, so that we have dataset in 'labeled_pics.csv file'!!!!!!!!!
-    data = pd.read_csv('labeled_pics.csv', index_col=0)
 
-    data['features'] = data['features'].apply(lambda x: re.sub('[\s\s]+', ' ', x.replace("\n ", '')).replace(' ', ','))
-
-    results = data['features'].apply(lambda x: np.sqrt(np.sum(np.square(np.subtract(eval(x), input)))))
-    return results.idxmin()
 
 clear("labeled_pics.csv")
 uploader("tester.txt")

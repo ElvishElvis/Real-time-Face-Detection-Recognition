@@ -5,7 +5,18 @@ import copy
 import Loader
 import tensorflow as tf
 from scipy import misc
+import pandas as pd
+import sys
 
+
+def calculation(input):
+    # print(input)
+    # remember to call uploader before calculation, so that we have dataset in 'labeled_pics.csv file'!!!!!!!!!
+    data = pd.read_csv('labeled_pics.csv', index_col=0)
+    # Since we use the min number to define the best, so for empty we use max, so it will never be chosen
+    results = data['features'].apply(
+        lambda x: np.sqrt(np.sum(np.square(np.subtract(eval(x), input))) if x != '[]' else sys.float_info.max))
+    return results.idxmin()
 
 # extract the four coordinate from the detector
 def rect_to_coordinate(rect):
@@ -56,7 +67,7 @@ def run():
     print("Reach Position 2")
     number = 0
     with tf.Graph().as_default():
-        print(tf.get_default_graph())
+        # print(tf.get_default_graph())
         print("Reach Position 3")
         with tf.Session() as sess:
             # Load the model
@@ -83,8 +94,8 @@ def run():
                     (x, y, w, h) = rect_to_coordinate(rect)
                     # draw rectangle
                     cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
-                    cv2.putText(frame, "Face #{}".format(i + 1), (x - 10, y - 10),
-                                cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+                    # cv2.putText(frame, "Face #{}".format(i + 1), (x - 10, y - 10),
+                    #             cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
                     # draw circle
                     for (x, y) in shape:
                         cv2.circle(frame, (x, y), 2, (0, 0, 255), -1)
@@ -110,6 +121,12 @@ def run():
 
                     except ValueError:
                         pass
+                try:
+                    tag=calculation(emb[0])
+                    cv2.putText(frame, "{}".format(tag), (x - 10, y - 10),
+                                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+                except UnboundLocalError:
+                    pass
                 # we put the processed frame back to the camera
                 rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2BGRA)
                 cv2.imshow('frame', rgb)
@@ -123,4 +140,4 @@ def run():
 
     video.release()
     cv2.destroyAllWindows()
-# run()
+run()

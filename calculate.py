@@ -10,7 +10,7 @@ from scipy import misc
 # return the list of 512 feature & the list of face matrix
 def calculate_feature(names):
     img_list = []
-    ppp=0
+    ppp=-1
     error_list=[]
     with tf.Graph().as_default():
         with tf.Session() as sess:
@@ -20,24 +20,35 @@ def calculate_feature(names):
             embeddings = tf.get_default_graph().get_tensor_by_name("embeddings:0")
             phase_train_placeholder = tf.get_default_graph().get_tensor_by_name("phase_train:0")
             for name in names:
+                ppp += 1
+                print("\n"+name)
+
                 # sometime read image may have null, thus nullpointer exception
                 try:
                     img = cv2.imread(name)
                     img = camera.resize(img, width=1200)
                 except AttributeError:
+                    print("error, {} have invalid size!!!".format(name))
+                    error_list.append(ppp)
                     continue
 
                 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
                 # this is the right place to put the copy,
                 # otherwise it will have empty when the face is too big
                 rects = detector(gray, 1)
-
+                if(len(rects))==0:
+                    print("error, cannot detect face in {} ".format(name))
+                    error_list.append(ppp)
+                    continue
                 print("Running.....on {}".format(name))
                 for (i, rect) in enumerate(rects):
-                    shape = predictor(gray, rect)
-                    shape = camera.shape_to_np(shape)
-                    (x, y, w, h) = camera.rect_to_coordinate(rect)
                     try:
+                        if(len(rects))>1:
+                            raise ValueError
+                        shape = predictor(gray, rect)
+                        shape = camera.shape_to_np(shape)
+                        (x, y, w, h) = camera.rect_to_coordinate(rect)
+
                         img = img[y :y + h , x :x +w ]
                         img = misc.imresize(img, (160, 160), interp='bilinear')
                         cv2.imwrite("name{}.jpg".format(ppp),img)
@@ -47,20 +58,22 @@ def calculate_feature(names):
                         # temp = copy.deepcopy(img)
                         # temp = temp.reshape([1, x1, y1, a1])
                         img_list.append(img)
-                        ppp += 1
+
+                        print(name+" Success!!!!!!!!!!!!!!!")
 
                     # if there are one more one face, we add it to the error list
                     except ValueError:
                         print("error, {} have more than one faces!!!".format(name))
                         error_list.append(ppp)
                         break;
+
             all_img=np.stack(img_list, axis=0)
             # we put the cropped image to the FaceNet, input shape(1,160,160,3)
             feed_dict = {images_placeholder: all_img, phase_train_placeholder: False}
             # emb return the facial feature of shape (1,512)
             embs = sess.run(embeddings, feed_dict=feed_dict)
 
-    return  all_img ,embs, error_list
+    return  all_img.tolist() ,embs.tolist(), error_list
 
 detector = dlib.get_frontal_face_detector()
 predictor = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
