@@ -5,6 +5,9 @@ import Loader
 import tensorflow as tf
 from scipy import misc
 import helpers
+import time
+from datetime import datetime
+
 
 
 def run():
@@ -15,7 +18,6 @@ def run():
     current = 0
     model = "20180402-114759"
     print("Reach Position 2")
-    number = 0
     with tf.Graph().as_default():
         # print(tf.get_default_graph())
         print("Reach Position 3")
@@ -44,21 +46,19 @@ def run():
                     (x, y, w, h) = helpers.rect_to_coordinate(rect)
                     # draw rectangle
                     cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
-                    # cv2.putText(frame, "Face #{}".format(i + 1), (x - 10, y - 10),
-                    #             cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+
                     # draw circle
-                    for (x, y) in shape:
-                        cv2.circle(frame, (x, y), 2, (0, 0, 255), -1)
+                    for (x1, y1) in shape:
+                        cv2.circle(frame, (x1, y1), 2, (0, 0, 255), -1)
                     # to prevent empty frame
                     try:
-                        temp = temp[y:y + h , x :x + w ]
+                        temp = temp[y:y + h, x:x + w]
                         temp = misc.imresize(temp, (160, 160), interp='bilinear')
-                        # When don't wan to snap the picture, comment out the following three lines
-                        # cv2.imwrite("name{}.png".format(number), temp)
-                        number += 1
+                        # Snap by the camera save by the time stamp
+                        cv2.imwrite("./camera_photo/{}.png".format(datetime.fromtimestamp(time.time())), temp)
                         print("SNAP!!!!!!!!!!!!! GIVE A SMILE")
                         if temp.ndim == 2:
-                            temp=helpers.to_rgb_from2(temp);
+                            temp = helpers.to_rgb_from2(temp);
                         # elif temp.ndim==4:
                         #     temp = to_rgb_from4(temp);
                         x1, y1, a1 = temp.shape
@@ -72,9 +72,9 @@ def run():
                     except ValueError:
                         pass
                 try:
-                    tag=helpers.calculation(emb[0])
+                    tag = helpers.calculation(emb[0])
                     cv2.putText(frame, "{}".format(tag), (x - 10, y - 10),
-                                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+                                cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
                 except UnboundLocalError:
                     pass
                 # we put the processed frame back to the camera
@@ -91,5 +91,6 @@ def run():
     video.release()
     cv2.destroyAllWindows()
 
-if __name__=="__main__":
+
+if __name__ == "__main__":
     run()

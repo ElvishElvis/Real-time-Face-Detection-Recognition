@@ -35,7 +35,7 @@ def uploader(txtfile):
     name_list=[]
     path_list=[]
     infotable = pd.DataFrame(columns=['name', 'features', 'img'])
-    with open(txtfile, encoding="utf16") as f:
+    with open(txtfile, encoding="utf8") as f:
         for line in f:
             if len(line)==0:
                 continue
@@ -82,7 +82,7 @@ def clear(csv_name):
 
 
 
-clear("labeled_pics.csv")
-uploader("tester.txt")
+# clear("labeled_pics.csv")
+uploader("team_names_paths.txt")
 # print(calculation(np.random.random_sample((1,512))))
 

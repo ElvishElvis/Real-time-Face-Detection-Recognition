@@ -9,9 +9,17 @@ import os
 import warnings
 
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
+import sys
+
+
 
 # return the list of 512 feature & the list of face matrix
 def calculate_feature(names):
+    # output log file
+    log_file = open("Uploader_info.log", "w")
+    old_stdout = sys.stdout
+    sys.stdout = log_file
+
     img_list = []
     ppp=-1
     error_list=[]
@@ -28,15 +36,16 @@ def calculate_feature(names):
 
                 # sometime read image may have null, thus nullpointer exception
                 try:
-                    name=os.path.join('./pic/', name)
+                    name=os.path.join('./Team/', name)
                     img = cv2.imread(name)
                     img = helpers.resize(img, width=1200)
                 except AttributeError:
-                    print("error, {} have invalid size!!!".format(name))
+                    print("error, cannot find {} ".format(name))
                     error_list.append(ppp)
                     continue
 
                 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+
                 # this is the right place to put the copy,
                 # otherwise it will have empty when the face is too big
                 rects = detector(gray, 1)
@@ -55,7 +64,7 @@ def calculate_feature(names):
 
                         img = img[y :y + h , x :x +w ]
                         img = misc.imresize(img, (160, 160), interp='bilinear')
-                        # cv2.imwrite("name{}.jpg".format(ppp),img)
+                        cv2.imwrite("./database_snap/{}".format(name[7:]),img)
 
                         img_list.append(img)
 
@@ -73,6 +82,10 @@ def calculate_feature(names):
             # emb return the facial feature of shape (1,512)
             embs = sess.run(embeddings, feed_dict=feed_dict)
 
+            #log infor
+            sys.stdout = old_stdout
+            log_file.close()
+
     return  all_img.tolist() ,embs.tolist(), error_list
 
 detector = dlib.get_frontal_face_detector()
@@ -81,11 +94,18 @@ predictor = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
 
 model = "20180402-114759"
 
-#
-# imgs=["Molly003.jpeg","Molly002.jpeg","Molly001.jpeg","Molly004.jpeg"]
-#
-# a,b=calculate_feature(imgs)
-# print(a.shape) # (4, 160, 160, 3)
-# print(b.shape) # (4, 512)
-#
-# #(4, 160, 160, 3)-> a[0][0]=a[1][0]=a[2][0]=a[3][0](160,160,3)
+
+
+
+
+''' input example
+
+imgs=["Molly003.jpeg","Molly002.jpeg","Molly001.jpeg","Molly004.jpeg"]
+
+a,b=calculate_feature(imgs)
+print(a.shape) # (4, 160, 160, 3)
+print(b.shape) # (4, 512)
+
+#(4, 160, 160, 3)-> a[0][0]=a[1][0]=a[2][0]=a[3][0](160,160,3)
+
+'''
