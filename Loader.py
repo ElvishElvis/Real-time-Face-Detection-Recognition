@@ -3,7 +3,7 @@ import tensorflow as tf
 import re
 from tensorflow.python.platform import gfile
 import warnings
-import cv2
+
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
 
 warnings.filterwarnings("ignore")
@@ -54,15 +54,3 @@ def get_model_filenames(model_dir):
                 max_step = step
                 ckpt_file = step_str.groups()[0]
     return meta_file, ckpt_file
-
-
-def load_model_fish(filepath):
-    fishface = cv2.face.FisherFaceRecognizer_create()
-    try :
-        fishface.read(filepath)
-        return fishface
-        print("Model successfully loaded")
-    except :
-        print("Unable to load model from xml file. Please check your files and try again.")
-        input("Press Enter to continue")
-        exit()

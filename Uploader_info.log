@@ -39,7 +39,7 @@ Running.....on ./Team/qingran.png
 ./Team/qingran.png Success!!!!!!!!!!!!!!!
 
 Arow.png
-error, cannot find ./Team/Arow.png 
+error, cannot detect face in ./Team/Arow.png 
 
 Yufei.png
 Running.....on ./Team/Yufei.png
@@ -62,7 +62,7 @@ Running.....on ./Team/KD.png
 ./Team/KD.png Success!!!!!!!!!!!!!!!
 
 Wendi.png
-error, cannot find ./Team/Wendi.png 
+error, cannot detect face in ./Team/Wendi.png 
 
 Yu-Chieh.png
 Running.....on ./Team/Yu-Chieh.png
@@ -97,7 +97,8 @@ Running.....on ./Team/yeyifei.png
 ./Team/yeyifei.png Success!!!!!!!!!!!!!!!
 
 Jia.png
-error, cannot find ./Team/Jia.png 
+Running.....on ./Team/Jia.png
+./Team/Jia.png Success!!!!!!!!!!!!!!!
 
 Ethan.png
 Running.....on ./Team/Ethan.png
@@ -108,10 +109,12 @@ Running.....on ./Team/luxiang.png
 ./Team/luxiang.png Success!!!!!!!!!!!!!!!
 
 Gary.png
-error, cannot find ./Team/Gary.png 
+Running.....on ./Team/Gary.png
+./Team/Gary.png Success!!!!!!!!!!!!!!!
 
 Joey1.png
-error, cannot find ./Team/Joey1.png 
+Running.....on ./Team/Joey1.png
+./Team/Joey1.png Success!!!!!!!!!!!!!!!
 
 Zhaoyue.png
 Running.....on ./Team/Zhaoyue.png
@@ -126,7 +129,8 @@ Running.....on ./Team/Harry.png
 ./Team/Harry.png Success!!!!!!!!!!!!!!!
 
 Mingyu.png
-error, cannot find ./Team/Mingyu.png 
+Running.....on ./Team/Mingyu.png
+./Team/Mingyu.png Success!!!!!!!!!!!!!!!
 
 Yiwen.png
 Running.....on ./Team/Yiwen.png
@@ -149,7 +153,7 @@ Running.....on ./Team/fanmingxuan.png
 ./Team/fanmingxuan.png Success!!!!!!!!!!!!!!!
 
 Guolong.png
-error, cannot find ./Team/Guolong.png 
+error, cannot detect face in ./Team/Guolong.png 
 
 Elvis1.jpeg
 Running.....on ./Team/Elvis1.jpeg
@@ -171,94 +175,14 @@ Running.....on ./Team/Elvis2.jpg
 ./Team/Elvis2.jpg Success!!!!!!!!!!!!!!!
 
 Jia.png
-error, cannot find ./Team/Jia.png 
+Running.....on ./Team/Jia.png
+./Team/Jia.png Success!!!!!!!!!!!!!!!
 
 Elaine1.jpeg
-Running.....on ./Team/Elaine1.jpeg
-./Team/Elaine1.jpeg Success!!!!!!!!!!!!!!!
+error, cannot find ./Team/Elaine1.jpeg 
 
 Elaine2.jpeg
 error, cannot find ./Team/Elaine2.jpeg 
 
 Elaine3.jpeg
 error, cannot find ./Team/Elaine3.jpeg 
-
-Joy1.jpeg
-Running.....on ./Team/Joy1.jpeg
-./Team/Joy1.jpeg Success!!!!!!!!!!!!!!!
-
-Joy2.jpeg
-Running.....on ./Team/Joy2.jpeg
-./Team/Joy2.jpeg Success!!!!!!!!!!!!!!!
-
-Joy3.jpeg
-Running.....on ./Team/Joy3.jpeg
-./Team/Joy3.jpeg Success!!!!!!!!!!!!!!!
-
-Joy4.jpeg
-Running.....on ./Team/Joy4.jpeg
-./Team/Joy4.jpeg Success!!!!!!!!!!!!!!!
-
-Joy5.jpeg
-Running.....on ./Team/Joy5.jpeg
-./Team/Joy5.jpeg Success!!!!!!!!!!!!!!!
-
-bradpitt_0.jpg
-error, cannot find ./Team/bradpitt_0.jpg 
-
-bradpitt_1.jpg
-error, cannot find ./Team/bradpitt_1.jpg 
-
-bradpitt_3.jpg
-error, cannot find ./Team/bradpitt_3.jpg 
-
-bradpitt_2.jpg
-error, cannot find ./Team/bradpitt_2.jpg 
-
-bg_4.jpg
-Running.....on ./Team/bg_4.jpg
-./Team/bg_4.jpg Success!!!!!!!!!!!!!!!
-
-mj_0.jpg
-Running.....on ./Team/mj_0.jpg
-./Team/mj_0.jpg Success!!!!!!!!!!!!!!!
-
-bg_0.jpg
-Running.....on ./Team/bg_0.jpg
-./Team/bg_0.jpg Success!!!!!!!!!!!!!!!
-
-em_2.jpg
-Running.....on ./Team/em_2.jpg
-./Team/em_2.jpg Success!!!!!!!!!!!!!!!
-
-em_3.jpg
-Running.....on ./Team/em_3.jpg
-error, ./Team/em_3.jpg have more than one faces!!!
-
-bg_1.jpg
-Running.....on ./Team/bg_1.jpg
-./Team/bg_1.jpg Success!!!!!!!!!!!!!!!
-
-mj_1.jpg
-Running.....on ./Team/mj_1.jpg
-./Team/mj_1.jpg Success!!!!!!!!!!!!!!!
-
-bg_3.jpg
-Running.....on ./Team/bg_3.jpg
-./Team/bg_3.jpg Success!!!!!!!!!!!!!!!
-
-em_1.jpg
-Running.....on ./Team/em_1.jpg
-./Team/em_1.jpg Success!!!!!!!!!!!!!!!
-
-em_0.jpg
-Running.....on ./Team/em_0.jpg
-./Team/em_0.jpg Success!!!!!!!!!!!!!!!
-
-bg_2.jpg
-Running.....on ./Team/bg_2.jpg
-./Team/bg_2.jpg Success!!!!!!!!!!!!!!!
-
-mj_2.jpg
-Running.....on ./Team/mj_2.jpg
-./Team/mj_2.jpg Success!!!!!!!!!!!!!!!

@@ -8,13 +8,12 @@ import helpers
 import time
 from datetime import datetime
 
-emotions = ["neutral", "anger", "contempt", "disgust", "fear", "happy", "sadness", "surprise"] #Emotion list
+
 
 def run():
     print("Reach Position 1")
     detector = dlib.get_frontal_face_detector()
     predictor = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
-    fishface=Loader.load_model_fish("googleCKPlus.xml")
     video = cv2.VideoCapture(0)
     current = 0
     model = "20180402-114759"
@@ -54,17 +53,18 @@ def run():
                     # to prevent empty frame
                     try:
                         temp = temp[y:y + h, x:x + w]
-                        temp_160 = misc.imresize(temp, (160, 160), interp='bilinear')
+                        temp = misc.imresize(temp, (160, 160), interp='bilinear')
                         # Snap by the camera save by the time stamp
-                        # cv2.imwrite("./camera_photo/{}.png".format(datetime.fromtimestamp(time.time())), temp)
-                        # print("SNAP!!!!!!!!!!!!! GIVE A SMILE")
-                        if temp_160.ndim == 2:
-                            temp_160 = helpers.to_rgb_from2(temp_160);
-
-                        x1, y1, a1 = temp_160.shape
-                        temp_re = temp_160.reshape([1, x1, y1, a1])
+                        cv2.imwrite("./camera_photo/{}.png".format(datetime.fromtimestamp(time.time())), temp)
+                        print("SNAP!!!!!!!!!!!!! GIVE A SMILE")
+                        if temp.ndim == 2:
+                            temp = helpers.to_rgb_from2(temp);
+                        # elif temp.ndim==4:
+                        #     temp = to_rgb_from4(temp);
+                        x1, y1, a1 = temp.shape
+                        temp = temp.reshape([1, x1, y1, a1])
                         # we put the cropped image to the FaceNet, input shape(1,160,160,3)
-                        feed_dict = {images_placeholder: temp_re, phase_train_placeholder: False}
+                        feed_dict = {images_placeholder: temp, phase_train_placeholder: False}
                         # emb return the facial feature of shape (1,512)
                         emb = sess.run(embeddings, feed_dict=feed_dict)
                         print("Network running....")
@@ -75,20 +75,6 @@ def run():
                     tag = helpers.calculation(emb[0])
                     cv2.putText(frame, "{}".format(tag), (x - 10, y - 10),
                                 cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
-
-
-                    # out = cv2.resize(temp, (350, 350))
-                    gray = cv2.cvtColor(temp, cv2.COLOR_BGR2GRAY)  # Convert image to grayscale
-                    # out=misc.imresize(gray, (350, 350), interp='bilinear')
-                    out = cv2.resize(gray, (350, 350))
-                    pred, conf = fishface.predict(out)
-                    # write on img
-                    info1 = 'Guessed emotion: ' + emotions[pred]
-                    cv2.putText(frame, info1, (10, 20), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (255, 100, 0))
-                    print(tag)
-                    print(emotions[pred])
-
-
                 except UnboundLocalError:
                     pass
                 # we put the processed frame back to the camera
