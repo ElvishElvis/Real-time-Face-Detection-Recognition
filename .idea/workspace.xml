@@ -1,12 +1,393 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2f341b5f-1c36-4a4f-ae8f-182b177658b5" name="Default Changelist" comment="">
+    <list default="true" id="c25044ef-17a9-4a4f-a37f-9207f4f0bdfd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calculate.py" beforeDir="false" afterPath="$PROJECT_DIR$/calculate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/camera.py" beforeDir="false" afterPath="$PROJECT_DIR$/camera.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tester.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tester.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploader.py" beforeDir="false" afterPath="$PROJECT_DIR$/uploader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/33.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/34.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/35.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/36.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/37.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/38.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/39.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/40.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/41.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/42.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/43.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/44.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/google_003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/google_005.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/google_006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/google_011.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/google_020.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/google_027.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/google_050.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/google_263.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/google_2D274906070737-today-160409-angry-face-7pm_today-inline-med.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/google_341.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/google_366.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/google_507.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/google_anger-how-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/google_anger-management.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/google_anger_300-ff1ed3d52460549ef371857a6f5ea872c5922bbb-s6-c30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/anger/google_angry-dude.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/33.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/34.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/35.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/36.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/37.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/38.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/39.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/40.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/41.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/42.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/43.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/44.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/45.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/46.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/47.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/48.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/49.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/50.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/51.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/52.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/53.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/54.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/55.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/56.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/57.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_004.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_005.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_014.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_017.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_041.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_048.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_049.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_054.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_074.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_075.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_079.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_091.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_097.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_103.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_109.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_111.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_131.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_141.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_149.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_153.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_155.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_169.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_182.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_199.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_214.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_236.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_284.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_292.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_298.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_299.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_301.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_303.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_308.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_309.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_317.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_329.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_331.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_336.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_349.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_389.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_396.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_439.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_442.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/disgust/google_445.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/33.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/34.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/35.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/36.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/37.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/38.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/39.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/40.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/41.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/42.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/43.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/44.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/45.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/46.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/47.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/48.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/49.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/50.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/51.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/52.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/53.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/54.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/55.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/56.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/57.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/58.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/59.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/60.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/61.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/62.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/63.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/64.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/65.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/66.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/67.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/68.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/google_004.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/google_006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/google_007.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/google_008.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/google_010.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/google_013.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/google_015.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/google_016.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/google_017.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/google_020.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/google_033.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/google_035.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/google_036.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/google_042.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/google_043.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/google_053.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/google_054.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/google_055.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/google_069.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/google_080.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/google_085.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/google_096.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/google_099.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/google_104.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/google_105.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/google_118.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/google_119.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/google_129.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/google_146.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/google_150.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/google_160.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/google_168.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/google_174.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/google_193.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/google_202.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/google_207.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/google_288.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/google_307.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/happy/google_326.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/33.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/34.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/35.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/36.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/37.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/38.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/39.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/40.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/41.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/42.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/43.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/44.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/45.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/46.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/47.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/48.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/49.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/50.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/51.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/52.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/53.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/54.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/55.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/56.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/57.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/58.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/59.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/60.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/61.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/62.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/63.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/64.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/65.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/66.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/67.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/68.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/69.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/70.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/71.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/72.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/73.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/74.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/75.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/76.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/77.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/78.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/79.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/80.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/81.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/82.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/google_003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/google_005.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/google_008.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/google_009.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/google_011.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/google_014.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/google_022.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/google_025.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/google_026.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/google_034.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/google_049.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/google_052.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/google_060.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/google_061.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/google_079.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/google_084.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/google_093.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/google_109.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/google_111.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/google_127.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/google_138.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/google_141.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/google_144.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/google_147.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/google_149.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/google_150.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/google_157.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/google_210.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/surprise/google_212.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_68_extracter.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_68_extracter.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,31 +398,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/temp.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="52" selection-start-line="52" selection-end-line="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/camera.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="57" column="54" selection-start-line="57" selection-start-column="54" selection-end-line="57" selection-end-column="54" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/uploader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="870">
-              <caret line="58" column="26" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
+            <state>
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -50,10 +409,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tester.txt">
+        <entry file="file://$PROJECT_DIR$/calculate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+            <state>
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,8 +422,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Loader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+            <state>
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -71,10 +431,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/calculate.py">
+        <entry file="file://$PROJECT_DIR$/helpers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="84" column="22" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="22" />
+            <state>
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -83,12 +442,50 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/helpers.py">
+        <entry file="file:///anaconda3/lib/python3.7/encodings/utf_16.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="16" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="16" />
+            <state relative-caret-position="990">
+              <caret line="66" selection-start-line="66" selection-end-line="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///anaconda3/lib/python3.7/codecs.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4800">
+              <caret line="321" selection-start-line="321" selection-end-line="321" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/camera.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dataset_68_extracter.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$USER_HOME$/Desktop/PycharmProjects/combination1 /jij.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="51" column="28" lean-forward="true" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="28" />
+              <folding>
+                <element signature="e#1#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -105,31 +502,9 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>rect</find>
-      <find>embs</find>
-      <find>Running</find>
-      <find>embeddings</find>
-      <find>ppp</find>
-      <find>csv_name</find>
-      <find>name</find>
-      <find>all_img</find>
-      <find>name_list</find>
-      <find>emb</find>
-      <find>copy</find>
-      <find>fic_list</find>
-      <find>camera</find>
-      <find>numpy</find>
-      <find>came</find>
-      <find>erro</find>
-      <find>eo</find>
-      <find>cv2</find>
-      <find>write</find>
-      <find>imwrite</find>
-      <find>number</find>
-      <find>gray</find>
-      <find>temp</find>
-      <find>imw</find>
+      <find>os.</find>
       <find>im</find>
+      <find>-</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -138,50 +513,39 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pic/tester.txt" />
-        <option value="$PROJECT_DIR$/tester.txt" />
-        <option value="$PROJECT_DIR$/helpers.py" />
-        <option value="$PROJECT_DIR$/Loader.py" />
-        <option value="$PROJECT_DIR$/uploader.py" />
-        <option value="$PROJECT_DIR$/temp.py" />
+        <option value="$PROJECT_DIR$/texter.txt" />
         <option value="$PROJECT_DIR$/calculate.py" />
-        <option value="$PROJECT_DIR$/camera.py" />
+        <option value="$PROJECT_DIR$/uploader.py" />
+        <option value="$PROJECT_DIR$/dataset_68_extracter.py" />
+        <option value="$USER_HOME$/Desktop/PycharmProjects/combination1 /jij.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="58" />
-    <option name="y" value="29" />
-    <option name="width" value="1253" />
-    <option name="height" value="859" />
+    <option name="x" value="142" />
+    <option name="y" value="60" />
+    <option name="width" value="1038" />
+    <option name="height" value="825" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="ML-Face-Recognition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ML-Face-Recognition" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ML-Face-Recognition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ML-Face-Recognition" type="462c0819:PsiDirectoryNode" />
-              <item name="pic" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -195,9 +559,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.camera">
+  <component name="RunManager" selected="Python.jij">
     <configuration name="calculate" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ML-Face-Recognition" />
+      <module name="Real-time-Face-Detection-recognition" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -217,19 +581,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="camera" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ML-Face-Recognition" />
+    <configuration name="dataset_68_extracter" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Real-time-Face-Detection-recognition" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="/anaconda3/bin/python3" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/camera.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dataset_68_extracter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -238,19 +602,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="temp" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ML-Face-Recognition" />
+    <configuration name="jij" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Real-time-Face-Detection-recognition" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Desktop/PycharmProjects/combination1 " />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/temp.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Desktop/PycharmProjects/combination1 /jij.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -260,7 +624,7 @@
       <method v="2" />
     </configuration>
     <configuration name="uploader" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ML-Face-Recognition" />
+      <module name="Real-time-Face-Detection-recognition" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -282,9 +646,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.camera" />
+        <item itemvalue="Python.jij" />
+        <item itemvalue="Python.dataset_68_extracter" />
         <item itemvalue="Python.uploader" />
-        <item itemvalue="Python.temp" />
         <item itemvalue="Python.calculate" />
       </list>
     </recent_temporary>
@@ -294,59 +658,66 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2f341b5f-1c36-4a4f-ae8f-182b177658b5" name="Default Changelist" comment="" />
-      <created>1558409954261</created>
+      <changelist id="c25044ef-17a9-4a4f-a37f-9207f4f0bdfd" name="Default Changelist" comment="" />
+      <created>1558630488988</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1558409954261</updated>
+      <updated>1558630488988</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="58" y="29" width="1253" height="859" extended-state="0" />
-    <editor active="true" />
+    <frame x="142" y="60" width="1038" height="825" extended-state="0" />
     <layout>
-      <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.19724026" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="2" />
-      <window_info anchor="bottom" id="Message" order="3" />
-      <window_info anchor="bottom" id="Find" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="5" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.2881356" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3470993" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.34379265" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/calculate.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/anaconda/envs/laidata2/lib/python3.6/site-packages/cv2/__init__.py">
+    <entry file="file://$PROJECT_DIR$/texter.txt" />
+    <entry file="file://$PROJECT_DIR$/003.png" />
+    <entry file="file://$PROJECT_DIR$/labeled_pics.csv" />
+    <entry file="file://$PROJECT_DIR$/tester.txt" />
+    <entry file="file://$PROJECT_DIR$/001.png" />
+    <entry file="file://$PROJECT_DIR$/002.png" />
+    <entry file="file://$PROJECT_DIR$/uploader.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <element signature="e#0#16#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda/envs/laidata2/lib/python3.6/site-packages/scipy/misc/pilutil.py">
+    <entry file="file://$PROJECT_DIR$/calculate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="554" selection-start-line="554" selection-end-line="554" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pic/tester.txt" />
-    <entry file="file://$PROJECT_DIR$/helpers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="16" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="16" />
+        <state>
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -355,54 +726,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Loader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+        <state>
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/temp.py">
+    <entry file="file://$PROJECT_DIR$/helpers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uploader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="58" column="26" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tester.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/calculate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="84" column="22" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="22" />
+        <state>
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file:///anaconda3/lib/python3.7/encodings/utf_16.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///anaconda3/lib/python3.7/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4800">
+          <caret line="321" selection-start-line="321" selection-end-line="321" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/camera.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="57" column="54" selection-start-line="57" selection-start-column="54" selection-end-line="57" selection-end-column="54" />
+        <state>
           <folding>
             <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset_68_extracter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/PycharmProjects/combination1 /jij.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="51" column="28" lean-forward="true" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="28" />
+          <folding>
+            <element signature="e#1#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
