@@ -34,7 +34,7 @@ detector = dlib.get_frontal_face_detector()
 predictor = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
 current = 0
 
-image = cv2.imread("IMG_4203.JPG")
+image = cv2.imread("WechatIMG10.jpeg")
 # frame = resize(image, width=1200)
 frame=image
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -45,10 +45,10 @@ for (i, rect) in enumerate(rects):
     shape = shape_to_np(shape)
 
     (x, y, w, h) = rect_to_bb(rect)
-    cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
+    cv2.rectangle(frame, (x, y), (x + w, y + h), (87, 192, 56), 2)
 
-    cv2.putText(frame, "Face #{}".format(i + 1), (x - 10, y - 10),
-                cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+    cv2.putText(frame, "Triple C #{}".format(i + 1), (x - 10, y - 10),
+                cv2.FONT_HERSHEY_SIMPLEX, 0.5, (87, 192, 56), 2)
     for (x, y) in shape:
         cv2.circle(frame, (x, y), 1, (0, 0, 255), -1)
 

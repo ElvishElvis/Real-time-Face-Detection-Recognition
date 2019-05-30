@@ -3,7 +3,7 @@ import sys
 import numpy as np
 import dlib
 import cv2
-
+import emotion_predictor
 def rect_to_bb(rect):
     x = rect.left()
     y = rect.top()
@@ -39,6 +39,7 @@ while (True):
     ret, frame = video.read()
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     rects = detector(gray, 1)
+    data=[]
     for (i, rect) in enumerate(rects):
         shape = predictor(gray, rect)
         shape = shape_to_np(shape)
@@ -48,17 +49,16 @@ while (True):
 
         cv2.putText(frame, "Michchdskjfakjsbdfjkabsjkdfhkqe #{}".format(i + 1), (x - 10, y - 10),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
-        print(".sdfasdfasdfasdfasdfasdfasdfasdfasd")
         for (x, y) in shape:
-            if(x <0 or y<0):
-                print(x,y)
-                cv2.circle(frame, (x, y), 100, (0, 255, 0), -1)
             cv2.circle(frame, (x, y), 2, (255, 0, 255), -1)
-
-            print(x,y)
-        print(".sdfasdfasdfasdfasdfasdfasdfasdfasd")
-
+            data.append(x)
+            data.append(y)
+    tag=emotion_predictor.output(data)
+    print(tag)
+    cv2.putText(frame, "tag{}".format(tag), (x - 10, y - 10),
+                cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
     rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2BGRA)
+
 
     cv2.imshow('frame', rgb)
     # press the key 'q' to quit the program

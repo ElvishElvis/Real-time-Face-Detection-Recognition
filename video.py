@@ -1,3 +1,10 @@
+'''
+
+This method allow use to upload a video and use our algorithm ( face detection and emotion detection)
+and output the detected result to a video
+This is not realtime but it will output a consecutive video
+
+'''
 import dlib
 import cv2
 import copy
@@ -5,14 +12,10 @@ import Loader
 import tensorflow as tf
 from scipy import misc
 import helpers
-import time
-from datetime import datetime
+import emotion_predictor
+
 
 emotions = ["neutral", "anger", "contempt", "disgust", "fear", "happy", "sadness", "surprise"] #Emotion list
-
-
-
-
 
 
 def run():
@@ -28,6 +31,7 @@ def run():
     model = "20180402-114759"
     print("Reach Position 2")
     rectangles=[]
+
     kkkk=0
     with tf.Graph().as_default():
         # print(tf.get_default_graph())
@@ -49,13 +53,14 @@ def run():
                     print(kkkk)
                     kkkk+=1
                     ret, frame = video.read()
+                    data_landmark = []
 
                     height, width, layers = frame.shape
                 except AttributeError:
                     break
 
                 size = (width, height)
-                frame = helpers.resize(frame, width=1200)
+                # frame = helpers.resize(frame, width=1200)
                 gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
                 # this is the right place to put the copy,
                 # otherwise it will have empty when the face is too big
@@ -73,9 +78,12 @@ def run():
                     # draw circle
                     for (x1, y1) in shape:
                         cv2.circle(frame, (x1, y1), 2, (0, 0, 255), -1)
+                        data_landmark.append(x1)
+                        data_landmark.append(y1)
                     # to prevent empty frame
                     try:
                         temp = temp[y:y + h, x:x + w]
+                        print(temp.shape)#this is to trigger error then the temp is out of scale and become empty, we skip it
                         temp_160 = misc.imresize(temp, (160, 160), interp='bilinear')
                         # Snap by the camera save by the time stamp
                         # cv2.imwrite("./camera_photo/{}.png".format(datetime.fromtimestamp(time.time())), temp)
@@ -92,30 +100,21 @@ def run():
                         print("Network running....")
 
                     except ValueError:
-                        pass
-                try:
-                    tag = helpers.calculation(emb[0])
-                    cv2.putText(frame, "{}".format(tag), (x - 10, y - 10),
-                                cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
-                    print("success!!!!!!1")
+                        continue
 
-                    # out = cv2.resize(temp, (350, 350))
-                    gray = cv2.cvtColor(temp, cv2.COLOR_BGR2GRAY)  # Convert image to grayscale
-                    # out=misc.imresize(gray, (350, 350), interp='bilinear')
-                    out = cv2.resize(gray, (350, 350))
-                    pred, conf = fishface.predict(out)
-                    # write on img
-                    info1 = 'Guessed emotion: ' + emotions[pred]
-                    cv2.putText(frame, info1, (10, 20), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (255, 100, 0))
-                    print(tag)
-                    print(emotions[pred])
-                    rectangles.append(frame)
+                tag = helpers.calculation(emb[0])
+                cv2.putText(frame, "{}".format(tag), (x - 10, y - 10),
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+                print("success!!!!!!1")
+
+                # out = cv2.resize(temp, (350, 350))
+                info1=emotion_predictor.output(data_landmark)
+                cv2.putText(frame, info1, (10, 20), cv2.FONT_HERSHEY_SIMPLEX, 2, (0, 255, 0))
+                print(tag)
+                rectangles.append(frame)
 
 
-                except( UnboundLocalError, cv2.error):
-                    pass
-
-            out = cv2.VideoWriter('ttttttt.avi', cv2.VideoWriter_fourcc(*'DIVX'), 15, size)
+            out = cv2.VideoWriter('output.avi', cv2.VideoWriter_fourcc(*'DIVX'), 15, size)
 
             for img in rectangles:
                 # write to video
