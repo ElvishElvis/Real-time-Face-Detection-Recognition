@@ -11,6 +11,7 @@ def calculation(input):
     # Since we use the min number to define the best, so for empty we use max, so it will never be chosen
     results = data['features'].apply(
         lambda x: np.sqrt(np.sum(np.square(np.subtract(eval(x), input))) if x != '[]' else sys.float_info.max))
+    print(list(results))
     return results.idxmin()
 
 # extract the four coordinate from the detector

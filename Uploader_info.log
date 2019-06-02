@@ -2,263 +2,74 @@ Model directory: 20180402-114759
 Metagraph file: model-20180402-114759.meta
 Checkpoint file: model-20180402-114759.ckpt-275
 
-Joey.png
-Running.....on ./Team/Joey.png
-./Team/Joey.png Success!!!!!!!!!!!!!!!
-
-Daisy.png
-Running.....on ./Team/Daisy.png
-./Team/Daisy.png Success!!!!!!!!!!!!!!!
-
-Xuege.png
-Running.....on ./Team/Xuege.png
-./Team/Xuege.png Success!!!!!!!!!!!!!!!
-
-Joy.png
-Running.....on ./Team/Joy.png
-./Team/Joy.png Success!!!!!!!!!!!!!!!
-
-Elaine.png
-Running.....on ./Team/Elaine.png
-./Team/Elaine.png Success!!!!!!!!!!!!!!!
-
-Weiran.png
-Running.....on ./Team/Weiran.png
-./Team/Weiran.png Success!!!!!!!!!!!!!!!
-
-Tony.png
-Running.....on ./Team/Tony.png
-./Team/Tony.png Success!!!!!!!!!!!!!!!
-
-Qinhao.png
-Running.....on ./Team/Qinhao.png
-./Team/Qinhao.png Success!!!!!!!!!!!!!!!
-
-qingran.png
-Running.....on ./Team/qingran.png
-./Team/qingran.png Success!!!!!!!!!!!!!!!
-
-Arow.png
-error, cannot find ./Team/Arow.png 
-
-Yufei.png
-Running.....on ./Team/Yufei.png
-./Team/Yufei.png Success!!!!!!!!!!!!!!!
-
-Yabo.png
-Running.....on ./Team/Yabo.png
-./Team/Yabo.png Success!!!!!!!!!!!!!!!
-
-huangxinyi.png
-Running.....on ./Team/huangxinyi.png
-./Team/huangxinyi.png Success!!!!!!!!!!!!!!!
-
-Amber.png
-Running.....on ./Team/Amber.png
-./Team/Amber.png Success!!!!!!!!!!!!!!!
-
-KD.png
-Running.....on ./Team/KD.png
-./Team/KD.png Success!!!!!!!!!!!!!!!
-
-Wendi.png
-error, cannot find ./Team/Wendi.png 
-
-Yu-Chieh.png
-Running.....on ./Team/Yu-Chieh.png
-./Team/Yu-Chieh.png Success!!!!!!!!!!!!!!!
-
-Roy.png
-Running.....on ./Team/Roy.png
-./Team/Roy.png Success!!!!!!!!!!!!!!!
-
-Yuki.png
-Running.....on ./Team/Yuki.png
-./Team/Yuki.png Success!!!!!!!!!!!!!!!
-
-snow.png
-Running.....on ./Team/snow.png
-./Team/snow.png Success!!!!!!!!!!!!!!!
-
-pengyucheng.png
-Running.....on ./Team/pengyucheng.png
-./Team/pengyucheng.png Success!!!!!!!!!!!!!!!
-
-Jiayou.png
-Running.....on ./Team/Jiayou.png
-./Team/Jiayou.png Success!!!!!!!!!!!!!!!
-
-Ziwen.png
-Running.....on ./Team/Ziwen.png
-./Team/Ziwen.png Success!!!!!!!!!!!!!!!
-
-yeyifei.png
-Running.....on ./Team/yeyifei.png
-./Team/yeyifei.png Success!!!!!!!!!!!!!!!
-
-Jia.png
-error, cannot find ./Team/Jia.png 
-
-Ethan.png
-Running.....on ./Team/Ethan.png
-./Team/Ethan.png Success!!!!!!!!!!!!!!!
-
-luxiang.png
-Running.....on ./Team/luxiang.png
-./Team/luxiang.png Success!!!!!!!!!!!!!!!
-
-Gary.png
-error, cannot find ./Team/Gary.png 
-
-Joey1.png
-error, cannot find ./Team/Joey1.png 
-
-Zhaoyue.png
-Running.....on ./Team/Zhaoyue.png
-./Team/Zhaoyue.png Success!!!!!!!!!!!!!!!
-
-Zhuoyuan.png
-Running.....on ./Team/Zhuoyuan.png
-./Team/Zhuoyuan.png Success!!!!!!!!!!!!!!!
-
-Harry.png
-Running.....on ./Team/Harry.png
-./Team/Harry.png Success!!!!!!!!!!!!!!!
-
-Mingyu.png
-error, cannot find ./Team/Mingyu.png 
-
-Yiwen.png
-Running.....on ./Team/Yiwen.png
-./Team/Yiwen.png Success!!!!!!!!!!!!!!!
-
-Mingjie.png
-Running.....on ./Team/Mingjie.png
-./Team/Mingjie.png Success!!!!!!!!!!!!!!!
-
-TonyZ.png
-Running.....on ./Team/TonyZ.png
-./Team/TonyZ.png Success!!!!!!!!!!!!!!!
-
-Minqi.png
-Running.....on ./Team/Minqi.png
-./Team/Minqi.png Success!!!!!!!!!!!!!!!
-
-fanmingxuan.png
-Running.....on ./Team/fanmingxuan.png
-./Team/fanmingxuan.png Success!!!!!!!!!!!!!!!
-
-Guolong.png
-error, cannot find ./Team/Guolong.png 
-
-Elvis1.jpeg
-Running.....on ./Team/Elvis1.jpeg
-./Team/Elvis1.jpeg Success!!!!!!!!!!!!!!!
-
-Elvis.jpg
-error, cannot find ./Team/Elvis.jpg 
-
-Elvis3.png
-Running.....on ./Team/Elvis3.png
-./Team/Elvis3.png Success!!!!!!!!!!!!!!!
-
-Elvis4.png
-Running.....on ./Team/Elvis4.png
-./Team/Elvis4.png Success!!!!!!!!!!!!!!!
-
-Elvis2.jpg
-Running.....on ./Team/Elvis2.jpg
-./Team/Elvis2.jpg Success!!!!!!!!!!!!!!!
-
-Jia.png
-error, cannot find ./Team/Jia.png 
-
-Elaine1.jpeg
-Running.....on ./Team/Elaine1.jpeg
-./Team/Elaine1.jpeg Success!!!!!!!!!!!!!!!
-
-Elaine2.jpeg
-error, cannot find ./Team/Elaine2.jpeg 
-
-Elaine3.jpeg
-error, cannot find ./Team/Elaine3.jpeg 
-
-Joy1.jpeg
-Running.....on ./Team/Joy1.jpeg
-./Team/Joy1.jpeg Success!!!!!!!!!!!!!!!
-
-Joy2.jpeg
-Running.....on ./Team/Joy2.jpeg
-./Team/Joy2.jpeg Success!!!!!!!!!!!!!!!
-
-Joy3.jpeg
-Running.....on ./Team/Joy3.jpeg
-./Team/Joy3.jpeg Success!!!!!!!!!!!!!!!
-
-Joy4.jpeg
-Running.....on ./Team/Joy4.jpeg
-./Team/Joy4.jpeg Success!!!!!!!!!!!!!!!
-
-Joy5.jpeg
-Running.....on ./Team/Joy5.jpeg
-./Team/Joy5.jpeg Success!!!!!!!!!!!!!!!
-
-bradpitt_0.jpg
-error, cannot find ./Team/bradpitt_0.jpg 
-
-bradpitt_1.jpg
-error, cannot find ./Team/bradpitt_1.jpg 
-
-bradpitt_3.jpg
-error, cannot find ./Team/bradpitt_3.jpg 
-
-bradpitt_2.jpg
-error, cannot find ./Team/bradpitt_2.jpg 
-
-bg_4.jpg
-Running.....on ./Team/bg_4.jpg
-./Team/bg_4.jpg Success!!!!!!!!!!!!!!!
-
-mj_0.jpg
-Running.....on ./Team/mj_0.jpg
-./Team/mj_0.jpg Success!!!!!!!!!!!!!!!
-
-bg_0.jpg
-Running.....on ./Team/bg_0.jpg
-./Team/bg_0.jpg Success!!!!!!!!!!!!!!!
-
-em_2.jpg
-Running.....on ./Team/em_2.jpg
-./Team/em_2.jpg Success!!!!!!!!!!!!!!!
-
-em_3.jpg
-Running.....on ./Team/em_3.jpg
-error, ./Team/em_3.jpg have more than one faces!!!
-
-bg_1.jpg
-Running.....on ./Team/bg_1.jpg
-./Team/bg_1.jpg Success!!!!!!!!!!!!!!!
-
-mj_1.jpg
-Running.....on ./Team/mj_1.jpg
-./Team/mj_1.jpg Success!!!!!!!!!!!!!!!
-
-bg_3.jpg
-Running.....on ./Team/bg_3.jpg
-./Team/bg_3.jpg Success!!!!!!!!!!!!!!!
-
-em_1.jpg
-Running.....on ./Team/em_1.jpg
-./Team/em_1.jpg Success!!!!!!!!!!!!!!!
-
-em_0.jpg
-Running.....on ./Team/em_0.jpg
-./Team/em_0.jpg Success!!!!!!!!!!!!!!!
-
-bg_2.jpg
-Running.....on ./Team/bg_2.jpg
-./Team/bg_2.jpg Success!!!!!!!!!!!!!!!
-
-mj_2.jpg
-Running.....on ./Team/mj_2.jpg
-./Team/mj_2.jpg Success!!!!!!!!!!!!!!!
+./pic_upload/Elvis1.jpg
+Running.....on ./pic_upload/Elvis1.jpg
+error, ./pic_upload/Elvis1.jpg have more than one faces!!!
+
+./pic_upload/Elvis2.jpg
+Running.....on ./pic_upload/Elvis2.jpg
+./pic_upload/Elvis2.jpg Success!!!!!!!!!!!!!!!
+
+./pic_upload/Elvis3.jpg
+Running.....on ./pic_upload/Elvis3.jpg
+./pic_upload/Elvis3.jpg Success!!!!!!!!!!!!!!!
+
+./pic_upload/Elvis4.jpg
+Running.....on ./pic_upload/Elvis4.jpg
+./pic_upload/Elvis4.jpg Success!!!!!!!!!!!!!!!
+
+./pic_upload/Elvis5.jpg
+Running.....on ./pic_upload/Elvis5.jpg
+./pic_upload/Elvis5.jpg Success!!!!!!!!!!!!!!!
+
+./pic_upload/Elvis6.jpg
+Running.....on ./pic_upload/Elvis6.jpg
+./pic_upload/Elvis6.jpg Success!!!!!!!!!!!!!!!
+
+./pic_upload/Elvis7.jpg
+Running.....on ./pic_upload/Elvis7.jpg
+./pic_upload/Elvis7.jpg Success!!!!!!!!!!!!!!!
+
+./pic_upload/Elvis8.jpg
+Running.....on ./pic_upload/Elvis8.jpg
+./pic_upload/Elvis8.jpg Success!!!!!!!!!!!!!!!
+
+./pic_upload/elvy1.jpg
+Running.....on ./pic_upload/elvy1.jpg
+./pic_upload/elvy1.jpg Success!!!!!!!!!!!!!!!
+
+./pic_upload/elvy2.jpg
+Running.....on ./pic_upload/elvy2.jpg
+./pic_upload/elvy2.jpg Success!!!!!!!!!!!!!!!
+
+./pic_upload/elvy3.jpg
+Running.....on ./pic_upload/elvy3.jpg
+./pic_upload/elvy3.jpg Success!!!!!!!!!!!!!!!
+
+./pic_upload/elvy4.jpg
+Running.....on ./pic_upload/elvy4.jpg
+./pic_upload/elvy4.jpg Success!!!!!!!!!!!!!!!
+
+./pic_upload/elvy5.jpg
+Running.....on ./pic_upload/elvy5.jpg
+./pic_upload/elvy5.jpg Success!!!!!!!!!!!!!!!
+
+./pic_upload/elvy6.jpg
+Running.....on ./pic_upload/elvy6.jpg
+./pic_upload/elvy6.jpg Success!!!!!!!!!!!!!!!
+
+./pic_upload/Mi1.jpg
+Running.....on ./pic_upload/Mi1.jpg
+./pic_upload/Mi1.jpg Success!!!!!!!!!!!!!!!
+
+./pic_upload/Mi2.jpg
+Running.....on ./pic_upload/Mi2.jpg
+./pic_upload/Mi2.jpg Success!!!!!!!!!!!!!!!
+
+./pic_upload/Mi3.jpg
+Running.....on ./pic_upload/Mi3.jpg
+./pic_upload/Mi3.jpg Success!!!!!!!!!!!!!!!
+
+./pic_upload/Mi4.jpg
+Running.....on ./pic_upload/Mi4.jpg
+./pic_upload/Mi4.jpg Success!!!!!!!!!!!!!!!

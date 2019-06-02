@@ -19,7 +19,6 @@ def calculate_feature(names):
     log_file = open("Uploader_info.log", "w")
     old_stdout = sys.stdout
     sys.stdout = log_file
-
     img_list = []
     ppp=-1
     error_list=[]
@@ -36,7 +35,7 @@ def calculate_feature(names):
 
                 # sometime read image may have null, thus nullpointer exception
                 try:
-                    name=os.path.join('./Team/', name)
+                    # name=os.path.join('./Team/', name)
                     img = cv2.imread(name)
                     img = helpers.resize(img, width=1200)
                 except AttributeError:
