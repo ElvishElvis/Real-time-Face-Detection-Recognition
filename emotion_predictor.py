@@ -5,7 +5,7 @@ from sklearn.linear_model import LogisticRegression
 train = pd.read_csv('emotions.csv', engine='python', error_bad_lines=False,
                     warn_bad_lines=False, header=None)
 train = train[train[136].isna() == False]
-diction = {'neutral': 0, 'surprise': 1, 'disgust': 2, 'anger': 3, 'happy': 4}
+diction = {'neutral': 1, 'surprise': 2, 'disgust': 3, 'anger': 4, 'happy': 5}
 train[136] = train[136].replace(diction)
 train = train.apply(lambda x: x.astype(int), axis=1)
 x = train[[i for i in range(136) if i % 2 == 0]]
@@ -19,7 +19,7 @@ try:
     y_train = train[136]
     mult = LogisticRegression()
     mult.fit(X_train, y_train)
-    back = {0: 'neutral', 1: 'surprise', 2: 'disappoint', 3: 'anger', 4: 'happy'}
+    back = {1: 'neutral', 2: 'surprise', 3: 'disappoint', 4: 'anger', 5: 'happy'}
 except KeyError:
     pass
 
